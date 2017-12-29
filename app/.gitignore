@@ -1,1 +1,5 @@
 /build
+*.zip
+.gradle/
+local.properties
+.idea/
