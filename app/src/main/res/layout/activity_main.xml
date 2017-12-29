@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    tools:context="com.xialan.beautymall.MainActivity">
+
+    <com.xialan.beautymall.ui.NoPreloadViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1562"
+        android:clipToPadding="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee" />
+        <include layout="@layout/layout_nav" />
+    </LinearLayout>
+</LinearLayout>

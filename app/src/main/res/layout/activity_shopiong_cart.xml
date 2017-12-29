@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title_bar_com"/>
+    <com.ajguan.library.EasyRefreshLayout
+        android:id="@+id/easy_refresh_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    </com.ajguan.library.EasyRefreshLayout>
+    <TextView
+        android:background="#dcdcdc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_marginLeft="@dimen/dp_6"
+            android:padding="@dimen/dp_6"
+            style="@style/cb_address"
+            android:id="@+id/cb_check_all"
+            android:text="全选"
+            android:textColor="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_summation"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textStyle="bold"
+            android:textColor="#fc280c"
+            android:textSize="@dimen/sp_18"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/dp_10" />
+        <Button
+            android:text="结算"
+            android:textColor="#fff"
+            android:background="@drawable/shape_btn_login"
+            android:id="@+id/btn_settlement"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

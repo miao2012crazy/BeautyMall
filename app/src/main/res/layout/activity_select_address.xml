@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title_bar_com"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <Button
+        android:textSize="@dimen/sp_16"
+        android:textColor="#fff"
+        android:text="设为收货地址"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape_btn_login"
+        android:id="@+id/btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40" />
+</LinearLayout>

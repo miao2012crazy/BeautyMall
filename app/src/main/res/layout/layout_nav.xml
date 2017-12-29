@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selected_home"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_classification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selected_classification"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_shoping_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selected_shoping_cart"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="#333"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selected_user"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="#333"
+            android:textSize="10sp" />
+    </RadioGroup>
+</LinearLayout>

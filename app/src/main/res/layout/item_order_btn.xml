@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/dp_10">
+
+    <Button
+        android:id="@+id/btn_after_sale_service"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_btn_order_2"
+        android:text="售后服务"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn_order_2"
+        android:text="立即支付"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/btn_update_address"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn_order"
+        android:text="修改地址"
+        android:textColor="#666"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:layout_gravity="end"
+        android:id="@+id/btn_cancel_order"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn_order"
+        android:text="取消订单"
+        android:textColor="#666"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

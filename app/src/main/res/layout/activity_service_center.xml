@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title_bar_com" />
+    <LinearLayout
+        android:id="@+id/ll_common_problem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/tv_user_center_style"
+            android:text="常见问题" />
+        <ImageView style="@style/iv_user_center_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_service_tel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_user_center_style"
+            android:text="客服电话" />
+        <ImageView style="@style/iv_user_center_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_feed_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/tv_user_center_style"
+            android:text="意见反馈" />
+        <ImageView style="@style/iv_user_center_right" />
+    </LinearLayout>
+
+</LinearLayout>

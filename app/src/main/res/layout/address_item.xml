@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_training"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_bg"
+    android:layout_height="@dimen/dp_100"
+    android:layout_marginTop="@dimen/dp_2"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <CheckBox
+            style="@style/cb_address"
+            android:id="@+id/cb_check"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginStart="@dimen/dp_6" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_is_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:gravity="center"
+                    android:text="[默认]"
+                    android:textColor="#fc4a2a"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginStart="@dimen/dp_14"
+                    android:gravity="center"
+                    android:text="收货人  "
+                    android:textColor="#666"
+                    android:textSize="@dimen/sp_16" />
+                <TextView
+                    android:id="@+id/tv_recv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#333"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/tv_consignee_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="18222703922"
+                    android:textColor="#666"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:gravity="center"
+                    android:text="地址："
+                    android:textColor="#666"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_address_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:maxLines="2"
+                    android:text="天津市西青区大寺镇赛达三大道五支路星朵(天津)电子有限公司" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

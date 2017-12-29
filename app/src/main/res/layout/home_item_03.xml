@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_training"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_3_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_item_3_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_item_3_image"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_4"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_discount_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_3_title"
+            android:layout_alignBottom="@+id/tv_item_3_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+</RelativeLayout>
